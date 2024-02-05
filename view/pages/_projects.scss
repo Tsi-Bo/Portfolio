@@ -1,0 +1,59 @@
+@use "../base/screen";
+
+.projects__title {
+  text-align: right;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-m);
+  margin-bottom: var(--gap-xl);
+  text-align: right;
+}
+
+.projects__2 {
+  text-align: left;
+}
+
+.projects__img {
+  width: var(--size-l);
+  height: var(--size-m);
+  border-radius: var(--pad-xs);
+  filter: grayscale(100%);
+  transition: all 0.5s;
+  &:hover,
+  &:active {
+    filter: grayscale(0%);
+  }
+}
+
+.projects__text {
+  max-width: var(--size-xl);
+}
+
+/* RESPONSIVE */
+
+@include screen.s {
+  .projects__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .projects__img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .projects__2 {
+    .projects__img {
+      order: 1;
+    }
+    .projects__text {
+      order: 2;
+    }
+  }
+}

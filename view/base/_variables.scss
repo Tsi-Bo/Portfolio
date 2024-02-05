@@ -1,0 +1,64 @@
+@use "./screen";
+
+:root {
+  --color-red: #ff2200;
+
+  /* PADDING / MARGIN */
+  --gap-s: 20px;
+  --gap-m: 34px;
+  --gap-l: 74px;
+  --gap-xl: 108px;
+
+  /* SMALL SIZES */
+
+  --pad-xs: 2px;
+  --pad-s: 4px;
+  --pad-m: 8px;
+  --pad-l: 12px;
+  --pad-xl: 16px;
+  --pad-xxl: 20px;
+
+  /* SIZES */
+  --size-s: 228px;
+  --size-m: 260px;
+  --size-l: 400px;
+  --size-xl: 500px;
+  --size-xxl: 600px;
+
+  /* ICONS SIZE */
+  --icon-m: 100px;
+
+  /* FONT SIZES */
+  --fs-xs: 12px;
+  --fs-s: 20px;
+  --fs-m: 24px;
+  --fs-l: 40px;
+  --fs-xl: 120px;
+
+  /* BLOCKS */
+
+  --block-xs: 480px;
+  --block-s: 600px;
+  --block-m: 800px;
+  --block-l: 1200px;
+  --block-xl: 1500px;
+}
+
+@include screen.s {
+  :root {
+    /* FONT SIZES */
+
+    --fs-xs: 10px;
+    --fs-m: 20px;
+    --fs-l: 30px;
+    --fs-xl: 80px;
+
+    --icon-m: 80px;
+
+    /* PADDING / MARGIN */
+    --gap-s: 18px;
+    --gap-m: 28px;
+    --gap-l: 62px;
+    --gap-xl: 88px;
+  }
+}

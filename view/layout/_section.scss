@@ -1,0 +1,18 @@
+@use "../base/screen";
+
+section {
+  padding: var(--gap-m) var(--gap-l);
+
+  width: 100%;
+  max-width: var(--block-l);
+
+  margin-bottom: var(--gap-l);
+}
+
+/* RESPONSIVE */
+
+@include screen.s {
+  section {
+    padding: var(--gap-m) var(--gap-s);
+  }
+}

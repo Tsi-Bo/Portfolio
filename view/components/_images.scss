@@ -1,0 +1,30 @@
+.img--bar {
+  max-width: fit-content;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+
+  transition: all 0.5s;
+
+  margin-bottom: 20px;
+}
+
+.img--bar:after {
+  border: 2px solid black;
+  bottom: 0;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  transition: all 280ms ease-in-out;
+  width: 10%;
+}
+
+.img--bar:hover:after,
+.img--bar:active:after {
+  backface-visibility: hidden;
+  border-color: red;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
