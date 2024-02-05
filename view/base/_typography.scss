@@ -1,0 +1,26 @@
+@use "./variables";
+
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: var(--color-red);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--gap-l);
+}
+
+h2 {
+  font-size: var(--fs-l);
+  margin-bottom: var(--gap-m);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: var(--fs-l);
+}
+
+p {
+  margin-bottom: var(--gap-m);
+}

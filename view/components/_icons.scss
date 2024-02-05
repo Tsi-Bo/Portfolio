@@ -1,0 +1,9 @@
+.icon {
+  height: var(--icon-m);
+  width: var(--icon-m);
+  transition: all 0.2s;
+}
+
+.icon:hover {
+  transform: translateY(var(--pad-s));
+}

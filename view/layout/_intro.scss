@@ -1,0 +1,103 @@
+@use "../base/screen";
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.intro__title {
+  position: absolute;
+  width: 90%;
+  max-width: var(--block-m);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  text-wrap: nowrap;
+
+  h1 {
+    letter-spacing: var(--pad-l);
+    margin-bottom: var(--gap-m);
+  }
+
+  h2 {
+    text-align: right;
+  }
+}
+
+.intro__container {
+  background-color: lightblue;
+  width: 70%;
+  height: 90%;
+  max-width: var(--size-xl);
+  position: relative;
+  overflow: hidden;
+  border-radius: 500px 500px 0 0;
+}
+
+.intro__wrapper {
+  background-color: lightpink;
+  opacity: 0.3;
+  inset: 0;
+  position: absolute;
+  display: flex;
+}
+
+.intro__img {
+  // aspect-ratio: 1 / 1.5;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  max-width: var(--size-xl);
+  object-fit: cover;
+}
+
+.intro__img,
+.intro__wrapper {
+  border-radius: 500px 500px 0 0;
+  transition: all 0.3s;
+}
+
+.intro__container > .intro__wrapper {
+  transform: translateY(100%);
+}
+
+.intro__container:hover > .intro__wrapper {
+  transform: translateY(0%);
+}
+
+// /* RESPONSIVE */
+
+// /* MEDIUM */
+// @include screen.m {
+//   .intro__img {
+//     height: auto;
+//     width: 70%;
+//   }
+
+//   .intro__title {
+//     h1 {
+//       margin-bottom: var(--pad-l);
+//     }
+//   }
+// }
+
+// /* SMALL */
+// @include screen.xs {
+//   .intro__title {
+//     h1 {
+//       letter-spacing: 0px;
+//     }
+//   }
+// }

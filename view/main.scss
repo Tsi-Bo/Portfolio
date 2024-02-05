@@ -1,0 +1,25 @@
+/* BASE */
+
+@use "./base/resets";
+@use "./base/screen";
+@use "./base/typography";
+@use "./base/variables";
+
+/* COMPONENTS */
+@use "./components/buttons";
+@use "./components/icons";
+@use "./components/images";
+
+/* LAYOUT */
+@use "./layout/footer";
+@use "./layout/header";
+@use "./layout/navbar";
+@use "./layout/section";
+@use "./layout/intro";
+
+/* PAGES */
+@use "./pages/about";
+@use "./pages/contact";
+@use "./pages/expertise";
+@use "./pages/home";
+@use "./pages/projects";

@@ -1,0 +1,69 @@
+@use "../base/screen";
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  gap: var(--gap-s);
+
+  min-height: var(--block-m);
+  // height: var(--block-s);
+}
+
+.about__img {
+  height: 100%;
+  max-width: var(--size-xl);
+  width: 50%;
+  object-fit: cover;
+  border-radius: 500px 500px 0 0;
+}
+
+.about__text {
+  width: 45%;
+}
+
+.about__text--small {
+  padding-left: var(--gap-m);
+  max-width: var(--size-xl);
+}
+
+/* RESPONSIVE */
+
+@include screen.s {
+  #about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__img {
+    width: 100%;
+    max-width: none;
+    order: 1;
+    height: auto;
+    max-height: var(--size-l);
+  }
+
+  .about__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    order: 2;
+  }
+  .about__text--small {
+    padding: 0;
+    text-align: left;
+    margin-bottom: var(--gap-l);
+  }
+}
+
+@include screen.xs {
+  .about__btn {
+    align-self: center;
+    width: 100%;
+  }
+}

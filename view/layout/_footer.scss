@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  color: #fff;
+}
+
+#section__footer {
+  padding: var(--gap-s) var(--gap-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.footer__text {
+  font-size: var(--fs-xs);
+}
+
+.footer__links {
+  font-size: var(--fs-xs);
+  padding: var(--pad-s) var(--pad-m);
+  border-radius: var(--pad-xs);
+  cursor: pointer;
+  &:hover {
+    color: black;
+    background-color: #fff;
+  }
+}

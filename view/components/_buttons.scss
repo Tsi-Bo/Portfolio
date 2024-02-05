@@ -1,0 +1,57 @@
+.btn {
+  max-width: fit-content;
+  font-weight: bold;
+  font-size: var(--fs-m);
+  background: none;
+  border: none;
+  padding: var(--pad-l) var(--pad-xxl);
+  font-size: var(--fs-l);
+  border-bottom: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+
+  letter-spacing: 0;
+  transition: all 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  letter-spacing: 5px;
+}
+
+.btn:after {
+  // backface-visibility: hidden;
+  border: 2px solid black;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  transition: all 280ms ease-in-out;
+  width: 10%;
+}
+
+.btn:hover:after,
+.btn:active:after {
+  backface-visibility: hidden;
+  border-color: red;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+/* BTN LINK*/
+
+.btn--link {
+  font-weight: bold;
+  color: inherit;
+  transition: all 0.2s;
+  display: block;
+  margin: var(--pad-l) 0;
+}
+
+.btn--link:hover {
+  transform: translateX(var(--pad-l));
+}
