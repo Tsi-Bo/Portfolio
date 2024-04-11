@@ -160,6 +160,18 @@ p {
   transform: translateX(var(--pad-l));
 }
 
+.btn--link__projects {
+  font-weight: bold;
+  color: inherit;
+  transition: all 0.2s;
+  display: block;
+  margin: var(--pad-l) var(--pad-l);
+}
+
+.btn--link__projects:hover {
+  transform: translateY(var(--pad-s));
+}
+
 .icon {
   height: var(--icon-m);
   width: var(--icon-m);
