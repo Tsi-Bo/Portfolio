@@ -172,6 +172,17 @@ p {
   transform: translateY(var(--pad-s));
 }
 
+.language__btn {
+  position: absolute;
+  top: var(--pad-l);
+  right: var(--pad-l);
+  transition: all 0.3s;
+}
+
+.language__btn:hover {
+  letter-spacing: 0.1rem;
+}
+
 .icon {
   height: var(--icon-m);
   width: var(--icon-m);
